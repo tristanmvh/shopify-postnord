@@ -1,0 +1,30 @@
+{
+  "name": "shopify-postnord",
+  "version": "1.0.0",
+  "main": "web/index.js",
+  "license": "UNLICENSED",
+  "scripts": {
+    "shopify": "shopify",
+    "build": "shopify app build",
+    "dev": "shopify app dev",
+    "info": "shopify app info",
+    "generate": "shopify app generate",
+    "deploy": "shopify app deploy"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "form-data": "^4.0.4",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.18.0",
+    "mysql2": "^3.14.1",
+    "sqlite3": "^5.1.7"
+  },
+  "author": "Tristan Vicente Hernandez",
+  "private": true,
+  "workspaces": [
+    "extensions/*",
+    "web",
+    "web/frontend"
+  ]
+}

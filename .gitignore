@@ -1,0 +1,23 @@
+.vscode
+.env
+web/.env
+node_modules
+waybills/*
+coverage
+.DS_Store
+Dockerfile
+logs
+*.log
+# vite build output
+dist/
+*.pdf
+
+# extensions build output
+extensions/*/build
+
+# Node library SQLite database
+web/database.sqlite
+
+# Ignore shopify files created during app dev
+.shopify/*
+.shopify.lock

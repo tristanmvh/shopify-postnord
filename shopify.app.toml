@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "8e74e490ff44b76b167e9a3849b24963"
+name = "your-app-name"
+handle = "handle"
+application_url = "https://example.com"
+embedded = true
+
+[build]
+include_config_on_deploy = true
+automatically_update_urls_on_dev = false
+
+[webhooks]
+api_version = "2025-04"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_customers,read_orders,read_products,write_orders, read_fulfillments, write_fulfillments, write_merchant_managed_fulfillment_orders, read_merchant_managed_fulfillment_orders, write_assigned_fulfillment_orders, write_third_party_fulfillment_orders"
+
+[auth]
+redirect_urls = [
+  "https://example.com/auth/callback",
+  "https://example.com/auth/shopify/callback",
+  "https://example.com/api/auth/callback"
+]
+
+[pos]
+embedded = false
