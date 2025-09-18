@@ -9,4 +9,4 @@ A PostNord integration for Shopify that generates waybills for MyPack Home Small
 - PostNord Developer account for testing (can be created at [atdeveloper.postnord.com](https://atdeveloper.postnord.com))
 
 
-**Make sure to fill out .env.demo and rename it to .env!**
+**Make sure to fill out ``web/.env.demo`` and rename it to ``.env``!**
